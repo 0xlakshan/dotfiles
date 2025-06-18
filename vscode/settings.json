@@ -1,0 +1,11 @@
+{
+    "workbench.preferredHighContrastColorTheme": "Default Dark Modern",
+    "workbench.iconTheme": "material-icon-theme",
+    "remote.SSH.remotePlatform": {
+        "sandbox.98n8vy.csb": "linux"
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "markdown-preview-enhanced.previewTheme": "solarized-light.css",
+    "markdown-preview-enhanced.enablePreviewZenMode": true,
+    "breadcrumbs.enabled": false
+}
