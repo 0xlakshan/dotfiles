@@ -1,4 +1,4 @@
-#### 🌵 My IDE, Git, Shell & Other Dev Tool Configs
+## 🌵 My IDE, Git, Shell & Other Dev Tool Configs
 
 Here’s a screenshot of how this tmux setup looks:
 <p align='left'>
