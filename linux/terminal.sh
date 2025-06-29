@@ -32,5 +32,5 @@ tmux send-keys -t $SESSION_NAME:0.2 '
 ' C-m
 tmux send-keys -t $SESSION_NAME:0.2 'export PS1="\w \$(git_branch)\n\[\033[38;5;208m\]λ\[\033[0m\] "' C-m
 tmux send-keys -t $SESSION_NAME:0.2 "clear" C-m
-tmux send-keys -t $SESSION_NAME:0.2 'cmatrix' C-m
+tmux send-keys -t $SESSION_NAME:0.2 'htop' C-m
 tmux attach-session -t $SESSION_NAME
