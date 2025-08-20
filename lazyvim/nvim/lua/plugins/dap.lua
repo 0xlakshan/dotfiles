@@ -1,3 +1,5 @@
+-- debug reference - https://banjocode.com/post/nvim/debug-node
+
 local function pick_script()
   local pilot = require("package-pilot")
 
@@ -27,19 +29,11 @@ return {
   dependencies = { "banjo/package-pilot.nvim" },
   opts = function(_, opts)
     local dap = require("dap")
-    -- copied from LazyVim
     local js_filetypes = { "typescript", "javascript", "typescriptreact", "javascriptreact" }
 
     local current_file = vim.fn.expand("%:t")
-
-    -- Add new base configurations, override the default ones
     for _, language in ipairs(js_filetypes) do
       dap.configurations[language] = {
-        {
-          name = "----- ↓ default configs ↓ -----",
-          type = "",
-          request = "launch",
-        },
         {
           type = "pwa-node",
           request = "launch",
@@ -68,78 +62,12 @@ return {
         {
           type = "node",
           request = "launch",
-          name = "unify-mono: ecoa-pod",
-          runtimeExecutable = "pnpm",
-          runtimeArgs = { "run", "start:ecoa-jobs-be" },
-          cwd = "${workspaceFolder}",
-        },
-        {
-          type = "node",
-          request = "launch",
           name = "pick script (pnpm)",
           runtimeExecutable = "pnpm",
           runtimeArgs = { "run", pick_script },
           cwd = "${workspaceFolder}",
         },
-        -- Divider for the launch.json derived configs
-        {
-          name = "----- ↓ launch.json configs ↓ -----",
-          type = "",
-          request = "launch",
-        },
       }
     end
   end,
-  keys = {
-    {
-      "<F9>",
-      function()
-        require("dap").toggle_breakpoint()
-      end,
-      desc = "Toggle Breakpoint",
-    },
-    {
-      "<F5>",
-      function()
-        require("dap").continue()
-      end,
-      desc = "Run/Continue",
-    },
-    {
-      "<F10>",
-      function()
-        require("dap").step_over()
-      end,
-      desc = "Step Over",
-    },
-    {
-      "<F11>",
-      function()
-        require("dap").step_into()
-      end,
-      desc = "Step Into",
-    },
-    {
-      "<S-F11>",
-      function()
-        require("dap").step_out()
-      end,
-      desc = "Step Out",
-    },
-    -- revert step over and step out
-    {
-      "<leader>dO",
-      function()
-        require("dap").step_out()
-      end,
-      desc = "Step Out",
-    },
-    {
-      "<leader>do",
-      function()
-        require("dap").step_over()
-      end,
-      desc = "Step Over",
-    },
-  },
 }

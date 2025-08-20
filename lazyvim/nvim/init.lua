@@ -1,6 +1,8 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+require("mason").setup()
+
 -- npm path for LSP
 vim.env.PATH = vim.env.PATH .. ":/home/lakshan/.nvm/versions/node/v24.5.0/bin"
 
