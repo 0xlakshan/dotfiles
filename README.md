@@ -1,6 +1,6 @@
 ## 🌵 My IDE, Git, Shell & Other Dev Tool Configs
 
-Here’s a screenshot of how this tmux setup looks:
+Here’s a screenshot of the terminal setup:
 <p align='left'>
 <img src='./screenshots/tmux-setup.png' width='100%'/>
 </p>
