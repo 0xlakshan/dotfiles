@@ -2,7 +2,7 @@
 
 Here’s a screenshot of how this tmux setup looks:
 <p align='left'>
-<img src='./screenshots/tmux-setup.png' width='600'/>
+<img src='./screenshots/tmux-setup.png' width='100%'/>
 </p>
 
 To activate the setup run:
