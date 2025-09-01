@@ -3,6 +3,13 @@
 SESSION_NAME="lakshan-tmux-session"
 DIR="$HOME/projects"
 
+if [ -n "$TMUX" ]; then
+  echo "Already inside tmux. Detach first."
+  exit 1
+fi
+
+tmux kill-session -t $SESSION_NAME 2>/dev/null
+
 tmux new-session -d -s $SESSION_NAME
 tmux send-keys -t $SESSION_NAME:0.0 '
     git_branch() { 
@@ -33,4 +40,4 @@ tmux send-keys -t $SESSION_NAME:0.2 '
 tmux send-keys -t $SESSION_NAME:0.2 'export PS1="\w \$(git_branch)\n\[\033[38;5;208m\]λ\[\033[0m\] "' C-m
 tmux send-keys -t $SESSION_NAME:0.2 "clear" C-m
 tmux send-keys -t $SESSION_NAME:0.2 'htop' C-m
-tmux attach-session -t $SESSION_NAME
+tmux attach -t $SESSION_NAME
