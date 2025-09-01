@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Launch
+Comment=Launches my shell script
+Exec=bash -c "/home/lakshan/launch.sh"
+Icon=utilities-terminal
+Terminal=true
+Type=Application
+StartupNotify=true
