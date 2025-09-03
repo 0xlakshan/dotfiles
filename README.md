@@ -2,15 +2,19 @@
 
 Here’s a screenshot of how this tmux setup looks:
 <p align='left'>
-<img src='./screenshots/tmux-setup.png' width='600'/>
+<img src='./screenshots/tmux-setup.png' width='100%'/>
 </p>
 
 To activate the setup run:
 ```
 git clone https://github.com/0xlakshan/dotfiles.git
 cd ./dotfiles
+
 cp ./linux/launch.sh ~/
 cp ./linux/launch.desktop ~/.local/share/applications
+
+cp ./neofetch/logo.txt ~/
+cp ./neofetch/config.conf ~/.config/neofetch
 ```
 
 The following diagram shows the anatomy of my shell prompt
