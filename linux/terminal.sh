@@ -40,4 +40,22 @@ tmux send-keys -t $SESSION_NAME:0.2 '
 tmux send-keys -t $SESSION_NAME:0.2 'export PS1="\w \$(git_branch)\n\[\033[38;5;208m\]λ\[\033[0m\] "' C-m
 tmux send-keys -t $SESSION_NAME:0.2 "clear" C-m
 tmux send-keys -t $SESSION_NAME:0.2 'htop' C-m
-tmux attach -t $SESSION_NAME
+# tmux attach -t $SESSION_NAME
+#
+# if command -v ghostty >/dev/null 2>&1; then
+#   echo "Ghostty detected 👻 Launching session inside Ghostty..."
+#   ghostty tmux attach -t "$SESSION_NAME"
+# else
+#   echo "Ghostty not found 🐧 Attaching in default terminal..."
+#   tmux attach -t "$SESSION_NAME"
+# fi
+
+# Give tmux a moment to fully initialize all panes
+sleep 0.5
+
+# Attach using ghostty if available, else default terminal
+if command -v ghostty >/dev/null 2>&1; then
+  ghostty sh -c "tmux attach -t $SESSION_NAME"
+else
+  tmux attach -t $SESSION_NAME
+fi
