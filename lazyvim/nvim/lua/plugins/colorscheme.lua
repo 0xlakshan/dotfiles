@@ -10,6 +10,7 @@ return {
       }
     end,
   },
+  { "ellisonleao/gruvbox.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {

@@ -1,0 +1,15 @@
+-- return {
+--   "nvim-neo-tree/neo-tree.nvim",
+--   opts = {
+--     filesystem = {
+--       filtered_items = {
+--         -- Set to false to always show dotfiles
+--         hide_dotfiles = false,
+--         -- Set to false to not hide files ignored by git
+--         hide_gitignored = false,
+--         -- You may also need to explicitly disable hide_hidden for all hidden files.
+--         hide_hidden = false,
+--       },
+--     },
+--   },
+-- }

@@ -21,5 +21,4 @@ return { -- lazy.nvim
       "rcarriga/nvim-notify",
     },
   },
-  { "mason-org/mason.nvim", opts = { ensure_installed = { "biome" } } },
 }
