@@ -21,4 +21,12 @@ return { -- lazy.nvim
       "rcarriga/nvim-notify",
     },
   },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      scroll = {
+        enabled = false,
+      },
+    },
+  },
 }
