@@ -7,12 +7,18 @@ Here’s a screenshot of how this tmux setup looks:
 
 To activate the setup run:
 ```
+CLONE REPO
+==========
 git clone https://github.com/0xlakshan/dotfiles.git
 cd ./dotfiles
 
+COPY LAUNCH SCRIPT
+==================
 cp ./linux/launch.sh ~/
 cp ./linux/launch.desktop ~/.local/share/applications
 
+CHANGE NEOFETCH LOGO
+====================
 cp ./neofetch/logo.txt ~/
 cp ./neofetch/config.conf ~/.config/neofetch
 ```
