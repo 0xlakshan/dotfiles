@@ -37,6 +37,7 @@ require("lazy").setup("plugins_lazy.lua")
 -- })
 -- vim.o.updatetime = 300
 
+-- -- Lsp Settings included in plugins
 require("lspconfig").ts_ls.setup({
   settings = {
     typescript = {
