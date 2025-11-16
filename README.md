@@ -5,7 +5,18 @@ Here’s a screenshot of how this tmux setup looks:
 <img src='./screenshots/tmux-setup.png' width='100%'/>
 </p>
 
-To activate the setup run:
+To activate the setup automatically:
+```
+CLONE REPO
+==========
+git clone https://github.com/0xlakshan/dotfiles.git
+cd ./dotfiles
+
+chmod +x install.sh
+./install.sh
+```
+
+To activate the setup manually run:
 ```
 CLONE REPO
 ==========
