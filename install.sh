@@ -10,3 +10,5 @@ cp ./neofetch/logo.txt ~/
 cp ./neofetch/config.conf ~/.config/neofetch/
 
 cp ./ghostty ~/.config/ghostty
+
+cp ./lazyvim ~/.config/lazyvim
