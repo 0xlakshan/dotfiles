@@ -32,6 +32,11 @@ CHANGE NEOFETCH LOGO
 ====================
 cp ./neofetch/logo.txt ~/
 cp ./neofetch/config.conf ~/.config/neofetch
+
+COPY CONFIG FILES
+==================
+cp ./ghostty ~/.config/ghostty
+cp ./lazyvim ~/.config/lazyvim
 ```
 
 The following diagram shows the anatomy of my shell prompt
