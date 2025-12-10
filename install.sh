@@ -8,3 +8,5 @@ cp ./linux/launch.desktop ~/.local/share/applications/
 
 cp ./neofetch/logo.txt ~/
 cp ./neofetch/config.conf ~/.config/neofetch/
+
+cp ./ghostty ~/.config/ghostty
