@@ -6,7 +6,13 @@ return {
     priority = 1000,
     opts = function()
       return {
-        transparent = true,
+        transparent = false,
+        styles = {
+          sidebars = "dark",
+        },
+        on_colors = function(colors)
+          colors.bg = "#002B36"
+        end,
       }
     end,
   },
