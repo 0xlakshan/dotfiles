@@ -7,3 +7,7 @@
 -- only for diagnostics. The rest of LSP support will still be
 -- provided by rust-analyzer.
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+
+-- LSP server for Ruby
+vim.g.lazyvim_ruby_lsp = "ruby_lsp"
+vim.g.lazyvim_ruby_formatter = "rubocop"
