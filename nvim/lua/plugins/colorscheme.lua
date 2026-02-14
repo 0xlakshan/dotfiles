@@ -5,18 +5,19 @@ return {
     lazy = false,
     priority = 1000,
     opts = function()
-      return {
-        transparent = false,
-        styles = {
-          sidebars = "dark",
-        },
-        on_colors = function(colors)
-          colors.bg = "#002B36"
-        end,
-      }
+      --  TURN THIS ON WHEN ON GHOSTTY TERMINAL
+      -- return {
+      -- transparent = false,
+      -- styles = {
+      --   sidebars = "dark",
+      -- },
+      -- on_colors = function(colors)
+      -- colors.bg = "#002B36"
+      -- end,
+      -- }
     end,
   },
-  { "ellisonleao/gruvbox.nvim" },
+  -- { "ellisonleao/gruvbox.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
