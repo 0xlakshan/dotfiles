@@ -130,3 +130,9 @@ esac
 
 #nvim
 export PATH=$PATH:/usr/local/bin
+
+# Added by `rbenv init` on Sun Feb 15 02:00:05 AM +0530 2026
+eval "$(~/.rbenv/bin/rbenv init - --no-rehash bash)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - bash)"
+export PATH=$PATH:$(go env GOPATH)/bin
